@@ -84,13 +84,11 @@ class App extends React.Component {
     return (
       <div className="mainDiv">
 
-      <div className ="subDiv">
         <h1>Angelyn's To-Do List</h1>
         <TodoForm
         addTask={this.addTask} 
         />
-        </div>
-      
+    
         <TodoList 
         tasks={this.state.tasks}
         toggleTask={this.toggleTask}

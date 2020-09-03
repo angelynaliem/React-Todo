@@ -14,7 +14,8 @@ body {
 
 h1 {
     color: darkslategrey;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
 }
 
 h2,
@@ -38,19 +39,22 @@ span {
 
 .formDiv {
     display: flex;
-    justify-content: space-around;
-
-
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
 }
+
+.inputStyle {
+    padding: 1%;
+}
+
 
 
 .task {
-    background-color: orchid;
+    cursor: pointer;
 
 }
 
-.task.purchased {
-    background-color: grey;
+.task.completed {
     text-decoration: line-through;
 }
 
@@ -59,12 +63,34 @@ form {
 }
 
 button {
-    background-color: goldenrod;
-    border: 1px solid brown;
-    color: midnightblue;
-    padding: 2%;
+    background-color: darkslategrey;
+    border: 1px solid yellowgreen;
+    color: white;
+    padding: 1%;
+    margin-left: 2.5%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+    background-color: seagreen;
 }
 
 input::placeholder {
-    opacity: 1;
+    color: grey;
+    opacity: 0.5;
 }
+
+.clearButton {
+    margin-top: 5%;
+}
+
+form > input {
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid darkslategray;
+    background-color: gainsboro;
+    width: 25%;
+}
+
